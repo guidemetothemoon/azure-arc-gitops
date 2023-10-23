@@ -37,4 +37,4 @@ spec:
               port: http
         env:
         - name: TITLE
-          value: "Welcome to Azure Arc-enabled Kubernetes cluster!"
+          value: "Welcome to Azure Arc-enabled Kubernetes cluster and MVP-Dagen!"
