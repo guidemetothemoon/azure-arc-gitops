@@ -4,3 +4,6 @@ commonLabels:
   environment: "dev"
 resources:
   - ../../../apps/hello-world
+replicas:
+  - name: deploy-hello-world
+    count: 1
