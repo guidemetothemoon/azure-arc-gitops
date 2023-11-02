@@ -38,3 +38,5 @@ spec:
         env:
         - name: TITLE
           value: "Welcome to Azure Arc-enabled Kubernetes cluster!"
+        - name: TEST
+          value: PLACEHOLDER

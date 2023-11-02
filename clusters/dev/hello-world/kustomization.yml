@@ -7,3 +7,16 @@ resources:
 replicas:
   - name: deploy-hello-world
     count: 3
+replacements:
+- source:
+    fieldPath: spec.clusterIP
+    kind: Service
+    name: Kubernetes
+    namespace: default
+  targets:
+  - fieldPaths:
+    - spec.template.spec.containers.[name=hello-world].env.[name=TEST].value
+    select:
+      kind: Deployment
+      name: deploy-hello-world
+      namespace: hello-world
