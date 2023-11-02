@@ -11,8 +11,8 @@ replacements:
 - source:
     fieldPath: spec.clusterIP
     kind: Service
-    name: kubernetes
-    namespace: default
+    name: svc-hello-world
+    namespace: hello-world
   targets:
   - fieldPaths:
     - spec.template.spec.containers.[name=hello-world].env.[name=TEST].value
