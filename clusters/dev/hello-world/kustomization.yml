@@ -11,7 +11,7 @@ replacements:
 - source:
     fieldPath: spec.clusterIP
     kind: Service
-    name: Kubernetes
+    name: kubernetes
     namespace: default
   targets:
   - fieldPaths:
